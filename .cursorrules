@@ -1,0 +1,57 @@
+# Bulk Document Maker Backend - Cursor Rules
+
+## Project Overview
+Backend API for premium SaaS bulk document generation service, built with Node.js and Express.
+
+## Tech Stack
+- Node.js (>=18.0.0)
+- Express.js framework
+- SQLite database
+- Multer for file uploads
+- Joi for validation
+- Nodemailer for email services
+- Puppeteer for PDF generation
+- Docx for Word document processing
+
+## Architecture
+- RESTful API design
+- MVC pattern (Routes → Controllers → Services)
+- Middleware-based request processing
+- Service layer for business logic
+- Utility functions for common operations
+
+## Code Standards
+- ES6+ JavaScript features
+- Async/await for asynchronous operations
+- Proper error handling and logging
+- Input validation and sanitization
+- Security best practices (helmet, CORS, rate limiting)
+- Clean, commented code with JSDoc
+
+## Key Components
+1. **Routes**: API endpoint definitions
+2. **Controllers**: Request/response handling
+3. **Services**: Business logic and external integrations
+4. **Middleware**: Request processing, validation, error handling
+5. **Utils**: Helper functions and utilities
+
+## API Endpoints
+- `/api/documents` - Document generation and management
+- `/api/templates` - Template upload and analysis
+- `/api/health` - System health monitoring
+
+## Security Features
+- Helmet for security headers
+- CORS configuration
+- Rate limiting
+- File upload validation
+- Input sanitization
+
+## Database Schema
+- templates: Document templates
+- documents: Generated documents
+- jobs: Processing jobs
+- users: User information
+- email_logs: Email activity
+
+Always prioritize security, performance, and maintainable code structure.
